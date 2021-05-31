@@ -1,4 +1,11 @@
 <%- include("partials/header"); -%>
-<h1>Home</h1>
-<p>Lacus vel facilisis volutpat est velit egestas dui id ornare. Semper auctor.</p>
+
+<% blog.forEach(post => { %>
+    <div class="post">
+    <h1><%= post.title  %></h1>
+    <p><%= post.content %></p>
+    </div>   
+
+<% });  %>
+
 <%- include("partials/footer"); -%>
