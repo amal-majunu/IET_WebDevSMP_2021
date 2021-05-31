@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 //mongodb+srv://<username>:<password>@cluster0.lzhjx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-mongoose.connect('mongodb+srv://user:test123@cluster0.lzhjx.mongodb.net/blogs', {useNewUrlParser:true, useUnifiedTopology: true});
+mongoose.connect('mongodb+srv://<username>:<password>@cluster0.lzhjx.mongodb.net/blogs', {useNewUrlParser:true, useUnifiedTopology: true});
 
 const Blog = require("./models/post");
 
